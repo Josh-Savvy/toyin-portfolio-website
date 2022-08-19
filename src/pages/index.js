@@ -1,13 +1,11 @@
 import Contact from "../components/Contact";
 import Cursor from "../components/Cursor";
-import { GET_ALL_DATA } from "../graphql/queries";
 import Intro from "../components/Intro";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import MainProjects from "../components/MainProjects";
 import Skills from "../components/Skills";
 import SmallProjects from "../components/SmallProjects";
 import Who from "../components/Who";
-import { client } from "../graphql/client";
 import { useRef } from "react";
 
 
@@ -32,9 +30,9 @@ const Home = ({ data }) => {
       <div data-scroll-container ref={containerRef}>
         <Intro />
         <Who />
-        <Skills skills={data.skills} />
-        <MainProjects projects={data.projects} />
-        <SmallProjects projects={data.smallProjects} />
+        <Skills />
+        <MainProjects />
+        <SmallProjects />
         <Contact />
       </div>
     </LocomotiveScrollProvider>
@@ -43,13 +41,3 @@ const Home = ({ data }) => {
 
 export default Home;
 
-export const getStaticProps = async () => {
-  const data = await client.request(GET_ALL_DATA);
-
-  return {
-    props: {
-      data,
-    },
-    revalidate: 3600,
-  };
-};

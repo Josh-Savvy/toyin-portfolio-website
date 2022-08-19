@@ -1,4 +1,11 @@
-const SmallProjects = ({ projects }) => {
+const SmallProjects = () => {
+  const projects = [
+    { link: "", name: "Lorem ipsum", title: "Loreem ispum", icon: { url: "/ps.png" }, description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus numquam facilis harum similique asperiores.", },
+    { link: "", name: "Lorem ipsum", title: "Loreem ispum", icon: { url: "/pr.png" }, description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus numquam facilis harum similique asperiores.", },
+    { link: "", name: "Lorem ipsum", title: "Loreem ispum", icon: { url: "/ai.png" }, description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus numquam facilis harum similique asperiores.", },
+    { link: "", name: "Lorem ipsum", title: "Loreem ispum", icon: { url: "/ps.png" }, description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus numquam facilis harum similique asperiores.", },
+    { link: "", name: "Lorem ipsum", title: "Loreem ispum", icon: { url: "/pr.png" }, description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus numquam facilis harum similique asperiores.", },
+  ]
   return (
     <div className="flex justify-center mx-[5vw] mt-16">
       <div className="w-full max-w-[1100px]">
@@ -10,13 +17,13 @@ const SmallProjects = ({ projects }) => {
           data-scroll-speed="1"
           className="grid gap-2 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] md:grid-cols-[repeat(auto-fill,_minmax(400px,_1fr))]"
         >
-          {projects.map((project) => (
+          {projects.map((project, i) => (
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="flex gap-3 hover:bg-slate-900 p-3 transition duration-300"
-              key={project.id}
+              key={i}
             >
               <img
                 className="h-[40px] w-[40px] my-1 object-cover"

@@ -49,7 +49,7 @@ const Contact = () => {
             </form>
           </div>
           <div className="flex-1">
-            <h1 className="text-xl mb-3">Other places</h1>
+            <h1 className="text-xl mb-3">Social Media</h1>
             {socialLinks.map((item) => (
               <a
                 key={item.title}

@@ -9,28 +9,20 @@ export const characters = [
 
 export const socialLinks = [
   {
-    title: "Github",
-    icon: "/github.png",
-    link: "https://github.com/napthedev",
+    title: "LinkedIn",
+    icon: "/linkedin.png",
+    link: "https://www.linkedin.com/in/oluwatoyin-omoyeni-a07aa21a2/",
   },
   {
     title: "Facebook",
     icon: "/facebook.png",
-    link: "https://www.facebook.com/napthedev",
+    link: "https://facebook.com/oluwatoyin.omoyeni.75",
   },
   {
-    title: "Discord",
-    icon: "/discord.png",
-    link: "https://discord.com/users/877882975855992852",
+    title: "WhatsApp",
+    icon: "/whatsapp.png",
+    link: "https://wa.me/+2348109531680?text=Hi%20Oluwatoyin.%20I%20Love%20u/%20~Joshua.",
+    
   },
-  {
-    title: "Codepen",
-    icon: "/codepen.png",
-    link: "https://codepen.io/enaypi",
-  },
-  {
-    title: "My blog",
-    icon: "/blog.png",
-    link: "https://blog.napthedev.com",
-  },
+  
 ];

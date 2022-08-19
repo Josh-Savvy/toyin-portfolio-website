@@ -1,4 +1,10 @@
-const Skills = ({ skills }) => {
+const Skills = () => {
+
+  const skills = [
+    { link: "", image: "/pr.png", title: "Adobe Premier Pro" },
+    { link: "", image: "/ai.png", title: "Adobe Illustrator" },
+    { link: "", image: "/ps.png", title: "Adobe Photoshop" }
+  ]
   return (
     <div className="lg:min-h-[70vh] px-[5vw] py-[80px] flex flex-col items-center justify-center z-[4]">
       <h1
@@ -15,13 +21,12 @@ const Skills = ({ skills }) => {
         data-scroll-speed="1"
         className="description text-lg text-center my-[30px]"
       >
-        Technologies and languages that I use to make my product everyday
+        Technologies and softwares that I use to make my product everyday
       </p>
       <div className="grid justify-center grid-cols-4 md:grid-cols-6 gap-y-[10px] md:gap-y-[20px]">
         {skills.map((skill) => (
           <a
             key={skill.link}
-            href={skill.link}
             target="_blank"
             rel="noopener noreferrer"
             className="item flex flex-col items-center justify-around group"
