@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { LazyMotion, domAnimation } from "framer-motion";
 import Head from "next/head";
-import Script from "next/script";
+// import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   return (

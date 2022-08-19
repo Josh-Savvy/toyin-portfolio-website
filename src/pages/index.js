@@ -10,7 +10,7 @@ import { useRef } from "react";
 
 
 
-const Home = ({ data }) => {
+const Home = () => {
   const containerRef = useRef(null);
 
   return (

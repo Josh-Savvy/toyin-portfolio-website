@@ -14,7 +14,7 @@ const Intro = () => {
         transition={{ duration: 0.4, delay: 1.4 }}
         className="text-2xl font-semibold text-center z-[1] overflow-hidden"
       >
-        {"Hi. I am "} <span className="text-yellow-500">Omoyeni</span>
+        {`Hi. I am `} <span className="text-yellow-500">Omoyeni</span>
       </m.p>
       <m.p
         data-scroll
@@ -44,7 +44,7 @@ const Intro = () => {
         transition={{ duration: 0.4, delay: 1.4 }}
         className="text-sm text-center z-[1] overflow-hidden italic"
       >
-        "We all have stories to tell and we make into videos"
+        {`We all have stories to tell and we make into videos`}
       </m.p>
       <m.a
         data-scroll
